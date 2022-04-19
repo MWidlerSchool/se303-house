@@ -5,7 +5,8 @@ class House
             "the house that Jack built",
             "the malt that lay in",
             "the rat that ate",
-            "the cat that killed"
+            "the cat that killed",
+            "the dog that worried"
         ]
 
     def line(number, pirate = false)
