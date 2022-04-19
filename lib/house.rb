@@ -14,7 +14,9 @@ class House
             "the farmer sowing his corn that kept",
             "the horse and the hound and the horn that belonged to",
         ]
-
+    def randomized_phrase_list()
+    end
+    
     def line(number, pirate = false, phrase_list = @@phrase_list)
         "#{pirate ? "Thar be" : "This is"} #{inner_text(number, phrase_list)}.\n"
     end
