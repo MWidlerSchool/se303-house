@@ -36,7 +36,7 @@ class House
         when 8
             "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 9
-            "the priest all shaven and shorn that married #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 10
             "the rooster that crowed in the morn that woke #{inner_text(number - 1)}"
         when 11
