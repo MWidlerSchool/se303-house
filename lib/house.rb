@@ -32,6 +32,7 @@ class House
     end
 
     def recite(pirate = false, randomize = false)
+        phrase_list = @@phrase_list.clone
         1.upto(12).collect { |i| line(i, pirate) }.join("\n")
     end
 end
