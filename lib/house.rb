@@ -15,7 +15,7 @@ class House
         when 1
             @@phrase_list[number]
         when 2
-            "the malt that lay in #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 3
             "the rat that ate #{inner_text(number - 1)}"
         when 4
