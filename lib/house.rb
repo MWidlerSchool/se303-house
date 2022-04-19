@@ -16,7 +16,7 @@ class House
         ]
 
     def line(number, pirate = false, phrase_list = @@phrase_list)
-        "#{pirate ? "Thar be" : "This is"} #{inner_text(number)}.\n"
+        "#{pirate ? "Thar be" : "This is"} #{inner_text(number, phrase_list)}.\n"
     end
 
     # calling directly always uses unmodified phrase list
@@ -34,6 +34,9 @@ class House
 
     def recite(pirate = false, randomize = false)
         phrase_list = @@phrase_list.clone
-        1.upto(12).collect { |i| line(i, pirate) }.join("\n")
+        if(randomize)
+            phrase_list = phrase_list.shuffle
+        end
+        1.upto(12).collect { |i| line(i, pirate, phrase_list) }.join("\n")
     end
 end
