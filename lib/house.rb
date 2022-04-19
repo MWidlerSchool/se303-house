@@ -15,10 +15,11 @@ class House
             "the horse and the hound and the horn that belonged to",
         ]
 
-    def line(number, pirate = false)
+    def line(number, pirate = false, phrase_list = @@phrase_list)
         "#{pirate ? "Thar be" : "This is"} #{inner_text(number)}.\n"
     end
 
+    # calling directly always uses unmodified phrase list
     def inner_text(number, phrase_list = @@phrase_list)
         begin
             if number == 1
