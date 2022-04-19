@@ -1,6 +1,7 @@
 class House
 
     def inititialize()
+        @phrase_list = []
     end
 
     def line(number, pirate = false)
