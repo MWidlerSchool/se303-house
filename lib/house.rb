@@ -1,7 +1,7 @@
 class House
 
     def line(number, pirate = false)
-        "#{pirate ? "Thar be" : "There is"} is #{inner_text(number)}.\n"
+        "#{pirate ? "Thar be" : "This is"} #{inner_text(number)}.\n"
     end
 
     def inner_text(number)
