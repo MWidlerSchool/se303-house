@@ -40,7 +40,7 @@ class House
     def recite(pirate = false, randomize = false)
         phrase_list = @@phrase_list.clone
         if(randomize)
-            phrase_list = phrase_list.shuffle
+            phrase_list = randomized_phrase_list()
         end
         1.upto(12).collect { |i| line(i, pirate, phrase_list) }.join("\n")
     end
