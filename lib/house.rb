@@ -45,7 +45,7 @@ class House
         when 11
             "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 12
-            "the horse and the hound and the horn that belonged to #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         else
             "no line found for #{number}"
         end
