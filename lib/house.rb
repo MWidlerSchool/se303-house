@@ -1,6 +1,6 @@
 class House
 
-    def line(number, thar = true)
+    def line(number, pirate = true)
         "This is #{inner_text(number)}.\n"
     end
 
