@@ -27,7 +27,7 @@ class House
         when 5
             "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 6
-            "the cow with the crumpled horn that tossed #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 7
             "the maiden all forlorn that milked #{inner_text(number - 1)}"
         when 8
