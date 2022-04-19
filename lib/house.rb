@@ -21,6 +21,7 @@ class House
     end
 
     def inner_text(number)
+        begin
         case number
         when 1
             @@phrase_list[number]
@@ -49,6 +50,8 @@ class House
         else
             "no line found for #{number}"
         end
+    rescue
+    end
     end
 
     def recite(pirate = false)
