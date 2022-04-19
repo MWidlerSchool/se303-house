@@ -1,11 +1,9 @@
 class House
 
-    def inititialize()
-        @phrase_list = [
+    phrase_list = [
             "",
             "the house that Jack built"
         ]
-    end
 
     def line(number, pirate = false)
         "#{pirate ? "Thar be" : "This is"} #{inner_text(number)}.\n"
