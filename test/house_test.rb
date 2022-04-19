@@ -124,4 +124,9 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, House.new.recite(pirate = true)
   end
 
+  def test_hard_to_test_versions
+    puts House.new.recite(pirate = false, randomize = true)
+    puts House.new.recite(pirate = true, randomize = true)
+  end
+
 end
