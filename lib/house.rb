@@ -21,7 +21,7 @@ class House
         when 3
             "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 4
-            "the cat that killed #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 5
             "the dog that worried #{inner_text(number - 1)}"
         when 6
