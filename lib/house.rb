@@ -42,7 +42,7 @@ class House
         when 10
             "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 11
-            "the farmer sowing his corn that kept #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 12
             "the horse and the hound and the horn that belonged to #{inner_text(number - 1)}"
         else
