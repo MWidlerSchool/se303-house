@@ -12,7 +12,7 @@ class House
     def inner_text(number)
         case number
         when 1
-            "the house that Jack built"
+            @@phrase_list[number]
         when 2
             "the malt that lay in #{inner_text(number - 1)}"
         when 3
