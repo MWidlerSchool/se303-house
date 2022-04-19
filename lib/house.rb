@@ -1,7 +1,6 @@
 class House
 
     @@phrase_list = [
-            "",
             "the house that Jack built",
             "the malt that lay in",
             "the rat that ate",
@@ -23,9 +22,9 @@ class House
     def inner_text(number)
         begin
             if number == 1
-                @@phrase_list[number]
+                @@phrase_list[number - 1]
             else
-                "#{@@phrase_list[number]} #{inner_text(number - 1)}"
+                "#{@@phrase_list[number - 1]} #{inner_text(number - 1)}"
             end
         rescue
             "no line found for #{number}"
