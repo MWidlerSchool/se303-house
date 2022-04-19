@@ -39,7 +39,7 @@ class House
         when 9
             "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 10
-            "the rooster that crowed in the morn that woke #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 11
             "the farmer sowing his corn that kept #{inner_text(number - 1)}"
         when 12
