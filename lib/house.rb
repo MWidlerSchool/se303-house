@@ -1,6 +1,6 @@
 class House
 
-    phrase_list = [
+    @@phrase_list = [
             "",
             "the house that Jack built"
         ]
