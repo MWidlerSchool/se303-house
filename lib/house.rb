@@ -31,7 +31,7 @@ class House
         end
     end
 
-    def recite(pirate = false)
+    def recite(pirate = false, randomize = false)
         1.upto(12).collect { |i| line(i, pirate) }.join("\n")
     end
 end
