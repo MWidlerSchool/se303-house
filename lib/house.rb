@@ -2,7 +2,8 @@ class House
 
     @@phrase_list = [
             "",
-            "the house that Jack built"
+            "the house that Jack built",
+            "the malt that lay in"
         ]
 
     def line(number, pirate = false)
