@@ -11,6 +11,7 @@ class House
             "the maiden all forlorn that milked",
             "the man all tattered and torn that kissed",
             "the priest all shaven and shorn that married",
+            "the rooster that crowed in the morn that woke",
         ]
 
     def line(number, pirate = false)
