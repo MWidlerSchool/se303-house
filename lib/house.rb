@@ -7,7 +7,8 @@ class House
             "the rat that ate",
             "the cat that killed",
             "the dog that worried",
-            "the cow with the crumpled horn that tossed"
+            "the cow with the crumpled horn that tossed",
+            "the maiden all forlorn that milked"
         ]
 
     def line(number, pirate = false)
