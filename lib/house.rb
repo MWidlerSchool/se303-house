@@ -9,7 +9,7 @@ class House
             "the dog that worried",
             "the cow with the crumpled horn that tossed",
             "the maiden all forlorn that milked",
-            "the man all tattered and torn that kissed"
+            "the man all tattered and torn that kissed",
         ]
 
     def line(number, pirate = false)
@@ -33,7 +33,7 @@ class House
         when 7
             "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 8
-            "the man all tattered and torn that kissed #{inner_text(number - 1)}"
+            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
         when 9
             "the priest all shaven and shorn that married #{inner_text(number - 1)}"
         when 10
