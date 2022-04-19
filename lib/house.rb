@@ -19,12 +19,12 @@ class House
         "#{pirate ? "Thar be" : "This is"} #{inner_text(number)}.\n"
     end
 
-    def inner_text(number)
+    def inner_text(number, phrase_list = @@phrase_list)
         begin
             if number == 1
-                @@phrase_list[number - 1]
+                phrase_list[number - 1]
             else
-                "#{@@phrase_list[number - 1]} #{inner_text(number - 1)}"
+                "#{phrase_list[number - 1]} #{inner_text(number - 1)}"
             end
         rescue
             "no line found for #{number}"
