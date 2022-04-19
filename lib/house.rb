@@ -22,36 +22,14 @@ class House
 
     def inner_text(number)
         begin
-        case number
-        when 1
-            @@phrase_list[number]
-        when 2
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 3
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 4
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 5
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 6
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 7
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 8
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 9
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 10
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 11
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        when 12
-            "#{@@phrase_list[number]} #{inner_text(number - 1)}"
-        else
+            if number == 1
+                @@phrase_list[number]
+            else
+                "#{@@phrase_list[number]} #{inner_text(number - 1)}"
+            end
+        rescue
             "no line found for #{number}"
         end
-    rescue
-    end
     end
 
     def recite(pirate = false)
