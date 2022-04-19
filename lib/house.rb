@@ -38,6 +38,7 @@ class House
     end
 
     def recite(pirate = false, randomize = false)
+        phrase_list = randomize ? randomized_phrase_list() : @@phrase_list
         phrase_list = @@phrase_list.clone
         if(randomize)
             phrase_list = randomized_phrase_list()
