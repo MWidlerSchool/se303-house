@@ -1,5 +1,8 @@
 class House
 
+    def inititialize()
+    end
+
     def line(number, pirate = false)
         "#{pirate ? "Thar be" : "This is"} #{inner_text(number)}.\n"
     end
