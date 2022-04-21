@@ -31,6 +31,8 @@ class House
             "cow with the crumpled horn that tossed the dog that worried the "
         when 5
             "dog that worried the "
+        when 4
+            ""
         else
             ""
         end
