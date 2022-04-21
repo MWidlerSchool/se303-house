@@ -31,6 +31,8 @@ class House
             "farmer sowing his corn that kept the rooster that crowed in the morn that woke the "
         when 10
             "rooster that crowed in the morn that woke the "
+        when 9
+            ""
         else
             ""
         end
