@@ -29,7 +29,7 @@ class House
         end
     end
 
-    def line_difference(number = :FIXME)
+    def line_difference(number)
         if number == 12
             "horse and the hound and the horn that belonged to the "
         else
