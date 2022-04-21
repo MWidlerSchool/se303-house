@@ -3,7 +3,7 @@ class House
     def line(number)
         case number
         when 1
-            "This is the house that Jack built.\n"
+            "This is the #{line_difference(number)}house that Jack built.\n"
         else
             "This is the #{line_difference(number)}malt that lay in the house that Jack built.\n"
         end
