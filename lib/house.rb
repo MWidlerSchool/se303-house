@@ -13,7 +13,7 @@ class House
         when 5
             "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         when 6
-            "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            "This is the #{line_difference(number)}cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         else
             "This is the #{line_difference(number)}maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         end
