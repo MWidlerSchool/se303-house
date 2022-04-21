@@ -33,6 +33,8 @@ class House
             "rooster that crowed in the morn that woke the priest all shaven and shorn that married the "
         when 9
             "priest all shaven and shorn that married the "
+        when 8
+            ""
         else
             ""
         end
