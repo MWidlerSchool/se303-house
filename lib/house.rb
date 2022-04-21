@@ -31,6 +31,8 @@ class House
             "maiden all forlorn that milked the cow with the crumpled horn that tossed the "
         when 6
             "cow with the crumpled horn that tossed the "
+        when 5
+            ""
         else
             ""
         end
