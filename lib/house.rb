@@ -31,6 +31,8 @@ class House
             "priest all shaven and shorn that married the man all tattered and torn that kissed the "
         when 8
             "man all tattered and torn that kissed the "
+        when 9
+            ""
         else
             ""
         end
