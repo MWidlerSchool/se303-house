@@ -4,8 +4,6 @@ class House
         case number
         when 1
             "This is the house that Jack built.\n"
-        when 2
-            "This is the #{line_difference(number)}malt that lay in the house that Jack built.\n"
         else
             "This is the #{line_difference(number)}malt that lay in the house that Jack built.\n"
         end
