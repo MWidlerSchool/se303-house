@@ -31,6 +31,8 @@ class House
             "cat that killed the rat that ate the "
         when 3
             "rat that ate the "
+        when 2
+            ""
         else
             ""
         end
