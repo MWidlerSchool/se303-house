@@ -30,7 +30,11 @@ class House
     end
 
     def line_difference(number = :FIXME)
-        "horse and the hound and the horn that belonged to the "
+        if number == 12
+            "horse and the hound and the horn that belonged to the "
+        else
+            ""
+        end
     end
 
     def recite()
