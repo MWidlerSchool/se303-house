@@ -15,24 +15,24 @@ class House
         when 6
             "This is the #{line_difference(number)}cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         else
-            "This is the #{line_difference(number)}maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+            "This is the #{line_difference(number)}cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
         end
     end
 
     def line_difference(number)
         case number
         when 12
-            "horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the "
+            "horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the "
         when 11
-            "farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the "
+            "farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the "
         when 10
-            "rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the "
+            "rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the "
         when 9
-            "priest all shaven and shorn that married the man all tattered and torn that kissed the "
+            "priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the "
         when 8
-            "man all tattered and torn that kissed the "
-        when 9
-            ""
+            "man all tattered and torn that kissed the maiden all forlorn that milked the "
+        when 7
+            "maiden all forlorn that milked the "
         else
             ""
         end
