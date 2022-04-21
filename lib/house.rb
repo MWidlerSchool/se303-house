@@ -1,45 +1,37 @@
 class House
 
-    @@phrase_list = [
-            "the house that Jack built",
-            "the malt that lay in",
-            "the rat that ate",
-            "the cat that killed",
-            "the dog that worried",
-            "the cow with the crumpled horn that tossed",
-            "the maiden all forlorn that milked",
-            "the man all tattered and torn that kissed",
-            "the priest all shaven and shorn that married",
-            "the rooster that crowed in the morn that woke",
-            "the farmer sowing his corn that kept",
-            "the horse and the hound and the horn that belonged to",
-        ]
-
-    def randomized_phrase_list()
-        phrase_list = @@phrase_list.drop(1)
-        phrase_list = phrase_list.shuffle
-        phrase_list.insert(0, @@phrase_list[0])
-    end
-
-    def line(number, pirate = false, phrase_list = @@phrase_list)
-        "#{pirate ? "Thar be" : "This is"} #{inner_text(number, phrase_list)}.\n"
-    end
-
-    # calling directly always uses unmodified phrase list
-    def inner_text(number, phrase_list = @@phrase_list)
-        begin
-            if number == 1
-                phrase_list[number - 1]
-            else
-                "#{phrase_list[number - 1]} #{inner_text(number - 1)}"
-            end
-        rescue
-            "no line found for #{number}"
+    def line(number)
+        case number
+        when 1
+            "This is the house that Jack built.\n"
+        when 2
+            "This is the malt that lay in the house that Jack built.\n"
+        when 3
+            "This is the rat that ate the malt that lay in the house that Jack built.\n"
+        when 4
+            "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 5
+            "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 6
+            "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 7
+            "This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 8
+            "This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 9
+            "This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 10
+            "This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 11
+            "This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        when 12
+            "This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+        else
+            "No line found for #{number}"
         end
     end
 
-    def recite(pirate = false, randomize = false)
-        phrase_list = randomize ? randomized_phrase_list() : @@phrase_list
-        1.upto(@@phrase_list.length).collect { |i| line(i, pirate, phrase_list) }.join("\n")
+    def recite()
+        1.upto(12).collect { |i| line(i) }.join("\n")
     end
-end
+end 
