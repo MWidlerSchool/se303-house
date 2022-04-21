@@ -31,6 +31,8 @@ class House
             "man all tattered and torn that kissed the maiden all forlorn that milked the "
         when 7
             "maiden all forlorn that milked the "
+        when 6
+            ""
         else
             ""
         end
