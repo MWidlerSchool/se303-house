@@ -29,6 +29,9 @@ class House
         end
     end
 
+    def line_difference()
+    end
+
     def recite()
         1.upto(12).collect { |i| line(i) }.join("\n")
     end
