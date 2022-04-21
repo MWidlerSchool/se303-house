@@ -31,6 +31,8 @@ class House
             "dog that worried the cat that killed the "
         when 4
             "cat that killed the "
+        when 3
+            ""
         else
             ""
         end
