@@ -1,6 +1,7 @@
 class House
 
     @@segment_array = [
+        "If you can read this, something has gone wrong",
         "",
         "malt that lay in the ",
         "rat that ate the malt that lay in the ",
@@ -20,8 +21,8 @@ class House
     end
 
     def line_difference(number)
-        if number <= @@segment_array.length
-            return @@segment_array[number - 1]
+        if number < @@segment_array.length
+            return @@segment_array[number]
         end
     end
 
