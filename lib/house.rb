@@ -8,7 +8,7 @@ class House
 
     def line_difference(number)
         if number < @@segment_array.length
-            return @@segment_array[number]
+            return @@segment_array[number - 1]
         end
         case number
         when 12
