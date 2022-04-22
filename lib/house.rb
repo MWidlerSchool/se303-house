@@ -39,11 +39,7 @@ end
 
 class PirateHouse < House
     def line(number, pirate = false)
-        if pirate
-            pirate_line(number)
-        else
-            landlubber_line(number)
-        end
+        "Thar be the #{@@segment_array[number]}house that Jack built.\n"
     end
 
     def landlubber_line(number)
