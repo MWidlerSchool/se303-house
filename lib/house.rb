@@ -20,12 +20,6 @@ class House
         "This is the #{@@segment_array[number]}house that Jack built.\n"
     end
 
-    def line_difference(number)
-        if number < @@segment_array.length
-            return @@segment_array[number]
-        end
-    end
-
     def recite()
         1.upto(12).collect { |i| line(i) }.join("\n")
     end
