@@ -32,13 +32,13 @@ class House
         "Thar be the #{@@segment_array[number]}house that Jack built.\n"
     end
 
-    def recite(pirate = false)
-        1.upto(12).collect { |i| line(i, pirate) }.join("\n")
+    def recite()
+        1.upto(12).collect { |i| line(i) }.join("\n")
     end
 end 
 
 class PirateHouse < House
-    def line(number, pirate = false)
+    def line(number)
         "Thar be the #{@@segment_array[number]}house that Jack built.\n"
     end
 
@@ -50,7 +50,7 @@ class PirateHouse < House
         "Thar be the #{@@segment_array[number]}house that Jack built.\n"
     end
 
-    def recite(pirate = false)
-        1.upto(12).collect { |i| line(i, pirate) }.join("\n")
+    def recite()
+        1.upto(12).collect { |i| line(i) }.join("\n")
     end
 end
