@@ -30,8 +30,6 @@ class House
             "man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the "
         when 7
             "maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the "
-        when 6
-            "cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the "
         end
     end
 
