@@ -32,7 +32,7 @@ class House
         "Thar be the #{@@segment_array[number]}house that Jack built.\n"
     end
 
-    def recite()
+    def recite(pirate = false)
         1.upto(12).collect { |i| line(i) }.join("\n")
     end
 
