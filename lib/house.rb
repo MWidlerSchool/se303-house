@@ -20,14 +20,6 @@ class House
         "This is the #{@@segment_array[number]}house that Jack built.\n"
     end
 
-    def landlubber_line(number)
-        "This is the #{@@segment_array[number]}house that Jack built.\n"
-    end
-
-    def pirate_line(number)
-        "Thar be the #{@@segment_array[number]}house that Jack built.\n"
-    end
-
     def recite()
         1.upto(12).collect { |i| line(i) }.join("\n")
     end
