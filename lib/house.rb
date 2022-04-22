@@ -17,7 +17,11 @@ class House
     ]
 
     def line(number, pirate = false)
-        "This is the #{@@segment_array[number]}house that Jack built.\n"
+        if pirate
+            pirate_line(number)
+        else
+            landlubber_line(number)
+        end
     end
 
     def landlubber_line(number)
