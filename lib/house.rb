@@ -1,6 +1,8 @@
 class House
 
-    @@segment_array = []
+    @@segment_array = [
+        "",
+    ]
 
     def line(number)
         "This is the #{line_difference(number)}house that Jack built.\n"
