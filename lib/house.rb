@@ -8,6 +8,7 @@ class House
         "dog that worried the cat that killed the rat that ate the malt that lay in the ",
         "cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the ",
         "maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the ",
+        "man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the ",
     ]
 
     def line(number)
