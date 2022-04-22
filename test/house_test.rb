@@ -96,7 +96,6 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
 
 
   def test_all_the_lines_pirate
-    skip
     expected = <<-TEXT
 Thar be the house that Jack built.
 
