@@ -36,3 +36,6 @@ class House
         1.upto(12).collect { |i| line(i, pirate) }.join("\n")
     end
 end 
+
+class PirateHouse < House
+end
