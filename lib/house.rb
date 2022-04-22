@@ -2,6 +2,7 @@ class House
 
     @@segment_array = [
         "",
+        "malt that lay in the ",
     ]
 
     def line(number)
