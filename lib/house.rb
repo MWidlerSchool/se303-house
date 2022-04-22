@@ -38,4 +38,23 @@ class House
 end 
 
 class PirateHouse < House
+    def line(number, pirate = false)
+        if pirate
+            pirate_line(number)
+        else
+            landlubber_line(number)
+        end
+    end
+
+    def landlubber_line(number)
+        "This is the #{@@segment_array[number]}house that Jack built.\n"
+    end
+
+    def pirate_line(number)
+        "Thar be the #{@@segment_array[number]}house that Jack built.\n"
+    end
+
+    def recite(pirate = false)
+        1.upto(12).collect { |i| line(i, pirate) }.join("\n")
+    end
 end
