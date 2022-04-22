@@ -20,7 +20,15 @@ class House
         "This is the #{@@segment_array[number]}house that Jack built.\n"
     end
 
+    def pirate_line(number)
+        "Thar be the #{@@segment_array[number]}house that Jack built.\n"
+    end
+
     def recite()
         1.upto(12).collect { |i| line(i) }.join("\n")
+    end
+
+    def pirate_recite()
+        1.upto(12).collect { |i| pirate_line(i) }.join("\n")
     end
 end 
