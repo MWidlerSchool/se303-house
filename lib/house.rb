@@ -23,7 +23,7 @@ class House
             "rat that ate the ",
             "cat that killed the ",
             "dog that worried the ",
-            "cow with the crumpled horn that tossed the  ",
+            "cow with the crumpled horn that tossed the ",
             "maiden all forlorn that milked the ",
             "man all tattered and torn that kissed the ",
             "priest all shaven and shorn that married the ",
@@ -39,7 +39,7 @@ class House
     end
 
     def assemble_line(number)
-        number.downto(1).collect { |i| @segment_array[i] }.join("")
+        number.downto(1).collect { |i| @segment_array2[i] }.join("")
     end
 
     def recite()
