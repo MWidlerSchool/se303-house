@@ -1,6 +1,10 @@
 class House
 
     def initialize()
+        @segment_array_prefix = [
+            "If you can read this, something has gone wrong",
+            ""
+        ]
         @subject_array = [
             "malt that ",
             "rat that ",
