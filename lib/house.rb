@@ -42,7 +42,7 @@ class House
     def self.random
         new_house = self.new
         new_house.randomize
-        return new_house
+        new_house
     end
 
     def randomize
@@ -52,11 +52,11 @@ class House
     end
 
     def randomize_array(original_array)
-        temp_array = original_array.shuffle
-        while(temp_array == original_array)
-            temp_array = original_array.shuffle
+        new_array = original_array.shuffle
+        while(new_array == original_array)
+            new_array = original_array.shuffle
         end
-        temp_array
+        new_array
     end
 
     def line(number)
