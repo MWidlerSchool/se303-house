@@ -36,9 +36,7 @@ class House
 
     def assemble_line_segments(subjects = @subject_array, verbs = @verb_array)
         temp_array = Array.new(subjects.length) {|i| (subjects[i] + verbs[i])}
-        ["If you can read this, something has gone wrong",
-            "",
-            temp_array].flatten
+        [@segment_array_prefix, temp_array].flatten
     end
 
     def self.random
