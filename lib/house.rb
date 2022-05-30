@@ -24,9 +24,14 @@ class House
     end
 
     def randomize
-        temp_array = @segment_array.slice(2, @segment_array.length)
-        temp_array = temp_array.shuffle
-        @segment_array = [@segment_array.slice(0, 1), temp_array].flatten
+        temp_array = []
+        loop do
+            temp_array = @segment_array.slice(2, @segment_array.length)
+            temp_array = temp_array.shuffle
+            temp_array = [@segment_array.slice(0, 1), temp_array].flatten
+            break if temp_array != @segment_array
+        end
+        @segment_array = temp_array
     end
 
     def line(number)
