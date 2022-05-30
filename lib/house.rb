@@ -38,7 +38,7 @@ class House
     end
 
     def assemble_line(number)
-        number.downto(1).collect { |i| @segment_array2[i] }.join("")
+        number.downto(1).collect { |i| @segment_array[i] }.join("")
     end
 
     def recite()
