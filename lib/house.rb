@@ -45,6 +45,9 @@ class House
     end
 
     def randomize
+        subjects = randomize_array(@subject_array)
+        verbs = randomize_array(@verb_array)
+        temp_variable = assemble_line_segments(subjects, verbs)
         temp_array = []
         loop do
             temp_array = @segment_array.slice(2, @segment_array.length)
