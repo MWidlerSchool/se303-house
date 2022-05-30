@@ -17,8 +17,6 @@ class House
             "horse and the hound and the horn that belonged to the ",
         ]
         @subject_array = [
-            "If you can read this, something has gone wrong",
-            "",
             "malt that ",
             "rat that ",
             "cat that ",
@@ -31,6 +29,26 @@ class House
             "farmer sowing his corn that ",
             "horse and the hound and the horn that ",
         ]
+        @verb_array = [
+            "lay in the ",
+            "ate the ",
+            "killed the ",
+            "worried the ",
+            "tossed the ",
+            "milked the ",
+            "kissed the ",
+            "married the ",
+            "crowed in the morn that woke the ",
+            "kept the ",
+            "belonged to the ",
+        ]
+    end
+
+    def assemble_segments(subjects = @subject_array, verbs = @verb_array)
+        temp_array = Array.new(subjects.length) {|i| (subjects[i] + verbs[i])}
+        ["If you can read this, something has gone wrong",
+            "",
+            temp_array].flatten
     end
 
     def self.random
