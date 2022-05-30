@@ -22,6 +22,10 @@ class House
         "This is the #{@segment_array[number]}house that Jack built.\n"
     end
 
+    def assemble_line(number)
+        number.downto(1).collect { |i| @segment_array[i] }.join("\n")
+    end
+
     def recite()
         1.upto(12).collect { |i| line(i) }.join("\n")
     end
