@@ -34,8 +34,8 @@ class House
     end
 
     def line(number)
-        "This is the #{assemble_line(number)}house that Jack built.\n"
         "This is the #{@segment_array[number]}house that Jack built.\n"
+        "This is the #{assemble_line(number)}house that Jack built.\n"
     end
 
     def assemble_line(number)
