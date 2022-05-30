@@ -53,6 +53,14 @@ class House
         @segment_array = temp_array
     end
 
+    def randomize_array(original_array)
+        temp_array = original_array.shuffle
+        while(temp_array == original_array)
+            temp_array = original_array.shuffle
+        end
+        temp_array
+    end
+
     def line(number)
         "This is the #{assemble_line(number)}house that Jack built.\n"
     end
