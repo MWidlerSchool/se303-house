@@ -18,6 +18,11 @@ class House
         ]
     end
 
+    def self.random
+        new_house = self.new
+        new_house.randomize
+    end
+
     def randomize
         temp_array = @segment_array.slice(2, @segment_array.length)
         temp_array = temp_array.shuffle
