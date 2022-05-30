@@ -44,7 +44,7 @@ class House
         ]
     end
 
-    def assemble_lines(subjects = @subject_array, verbs = @verb_array)
+    def assemble_line_segments(subjects = @subject_array, verbs = @verb_array)
         temp_array = Array.new(subjects.length) {|i| (subjects[i] + verbs[i])}
         ["If you can read this, something has gone wrong",
             "",
