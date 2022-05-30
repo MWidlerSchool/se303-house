@@ -124,12 +124,12 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, PirateHouse.new.recite()
   end
 
-  def test_hard_to_test_versions
+  def test_randomized_basic
     refute_equal House.new, House.random
     refute_equal PirateHouse.new, PirateHouse.random
   end
 
-  def test_that_prints_hard_to_test_versions
+  def test_randomized_full
     expected_normal = <<-TEXT
 This is the house that Jack built.
 
