@@ -125,14 +125,12 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
   end
 
   def test_hard_to_test_versions
-    skip
-    puts " - - - "
-    puts House.new.recite(pirate = false, randomize = true)
-    puts " - - - "
-    puts House.new.recite(pirate = true, randomize = true)
+    refute_equal House.new, House.random
+    refute_equal PirateHouse.new, PirateHouse.random
   end
 
   def test_that_prints_hard_to_test_versions
+    skip
     puts " - - - "
     house = House.new
     house.randomize
