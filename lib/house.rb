@@ -18,6 +18,12 @@ class House
         ]
     end
 
+    def randomize
+        temp_array = @segment_array.slice(2, @segment_array.length)
+        temp_array = temp_array.shuffle
+        @segment_array = [@segment_array.slice(0, 1), temp_array].flatten
+    end
+
     def line(number)
         "This is the #{assemble_line(number)}house that Jack built.\n"
     end
