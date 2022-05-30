@@ -16,6 +16,21 @@ class House
             "farmer sowing his corn that kept the ",
             "horse and the hound and the horn that belonged to the ",
         ]
+        @subject_array = [
+            "If you can read this, something has gone wrong",
+            "",
+            "malt that ",
+            "rat that ",
+            "cat that ",
+            "dog that ",
+            "cow with the crumpled horn that ",
+            "maiden all forlorn that ",
+            "man all tattered and torn that ",
+            "priest all shaven and shorn that ",
+            "rooster that crowed in the morn that ",
+            "farmer sowing his corn that ",
+            "horse and the hound and the horn that ",
+        ]
     end
 
     def self.random
