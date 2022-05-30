@@ -42,6 +42,7 @@ class House
     def self.random
         new_house = self.new
         new_house.randomize
+        return new_house
     end
 
     def randomize

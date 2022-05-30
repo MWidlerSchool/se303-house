@@ -132,9 +132,9 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
   def test_that_prints_hard_to_test_versions
     #skip
     puts " - - - "
-    puts House.new.recite()
+    puts House.random.recite()
     puts " - - - "
-    puts PirateHouse.new.recite()
+    puts PirateHouse.random.recite()
   end
 
 end
