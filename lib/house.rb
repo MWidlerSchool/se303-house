@@ -38,10 +38,11 @@ class House
             "milked the ",
             "kissed the ",
             "married the ",
-            "crowed in the morn that woke the ",
+            "woke the ",
             "kept the ",
             "belonged to the ",
         ]
+        @segment_array = assemble_line_segments
     end
 
     def assemble_line_segments(subjects = @subject_array, verbs = @verb_array)
